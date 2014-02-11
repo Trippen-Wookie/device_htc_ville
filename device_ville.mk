@@ -23,8 +23,12 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/ville/overlay
 
 # Boot ramdisk setup
 PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.target.rc
+    fstab-new.qcom \
+    fstab-old.qcom \
+    remount-new.qcom \
+    remount-old.qcom \
+    init.target.rc \
+    setfstab
 
 # HTC BT audio config
 PRODUCT_COPY_FILES += device/htc/ville/configs/AudioBTID.csv:system/etc/AudioBTID.csv

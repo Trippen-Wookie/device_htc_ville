@@ -37,7 +37,6 @@ TARGET_BOOTLOADER_BOARD_NAME := ville
 TARGET_KERNEL_CONFIG := ville_defconfig
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8-sm/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-SUGARRUSH=true
 KRAIT_TUNINGS=true
 
 # Bluetooth

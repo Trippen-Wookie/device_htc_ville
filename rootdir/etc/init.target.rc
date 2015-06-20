@@ -1,6 +1,5 @@
 on init
     mkdir /mnt/shell/emulated 0700 shell shell
-    #External storage directories
     mkdir /mnt/media_rw/sdcard0 0700 media_rw media_rw
     mkdir /mnt/media_rw/usbdisk 0700 media_rw media_rw
 
@@ -60,8 +59,8 @@ service fuse_usbdisk /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usbdisk
     class late_start
     disabled
 
-# Set sys.storage_legacy if remount.qcom shows the system partition to be on p35 (old configuration)
-service set_props /system/bin/sh -c "setprop sys.storage_legacy $(cat /remount.qcom | grep -c p35)"
+# Set sys.storage_legacy if remount.qcom shows the system partition to be on p33 (old configuration)
+service set_props /system/bin/sh -c "setprop sys.storage_legacy $(cat /remount.qcom | grep -c p33)"
     user root
     group system
     oneshot

@@ -120,7 +120,7 @@ int main(int argc, const char **argv) {
 
     int syspart;
 
-    LEGACY = ((syspart = emmc_name_to_number("system")) == 35);
+    LEGACY = ((syspart = emmc_name_to_number("system")) == 33);
 
     if (DEBUG) { logi("System partition found at %d", syspart); }
 

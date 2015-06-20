@@ -22,6 +22,8 @@ $(call inherit-product, device/htc/s4-common/s4.mk)
 DEVICE_PACKAGE_OVERLAYS += device/htc/ville/overlay
 
 # Boot ramdisk setup
+TARGET_SETS_FSTAB := true
+
 PRODUCT_PACKAGES += \
     fstab-new.qcom \
     fstab-old.qcom \
